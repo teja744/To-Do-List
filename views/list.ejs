@@ -1,0 +1,36 @@
+<%- include("header") -%>
+<body>
+    
+    <h2> <strong><%=listTitle%></strong> </h2>
+    <h4>Click on checkbox to delete your completed activity</h4>
+    <div class = "box">
+        
+        <form action="/delete" method="post">  <!--for deleting  items this form is used-->
+            <ul>
+                <% y.forEach(function(i){ %>
+                <div class="item">
+                    <input type="checkbox" name="checkbox" value="<%=i._id%>" onChange="this.form.submit()">
+                    <%=i.name%>
+                    <!-- <li><%=i%></li> -->
+                </div>
+                <input type="hidden" name="listName" value="<%= listTitle %>"></input>
+                <% }); %>  
+            </ul>
+        </form>   
+    </div>
+    
+    
+    
+    <form  action="/" method="post"> <!--for adding new items this form is used-->
+        
+        <h4>Enter your new Daily Activity and  Click on + button to add in your To-do-list</h4>
+        <input type="text" name = "use" placeholder="enter text" autocomplete="off"> <br>
+        <button type="submit" name="list" value="<%= listTitle%>">+</button>
+        
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+<%- include("footer") -%>
+
