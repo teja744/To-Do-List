@@ -1,4 +1,2 @@
-[[redirects]]
-from = "/*"
-to="/Procfile" 
-status = 200
+[build]
+functions = "functions"
