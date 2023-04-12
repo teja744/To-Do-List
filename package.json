@@ -1,0 +1,29 @@
+{
+  "name": "templates",
+  "version": "1.0.0",
+  "description": "Templates Beginning",
+  "main": "app.js",
+  "scripts": {
+    "build": "netlify deploy --prod"
+  },
+  "author": "Adhikarla Teja",
+  "license": "ISC",
+  "engines": {
+    "node": "18.14.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "iquery": "^0.0.2",
+    "jquery": "^3.6.4",
+    "jsdom": "^21.1.0",
+    "mongoose": "^7.0.2",
+    "mongoose-encryption": "^2.1.2",
+    "netlify-cli": "^13.2.2",
+    "netlify-lambda": "^2.0.16",
+    "read-scripts": "^1.1.0",
+    "serverless-http": "^3.2.0"
+  }
+}
