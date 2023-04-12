@@ -1,8 +1,8 @@
 /node_modules
 node-js-getting-started
 package-lock.json
-package.json
 npm-debug.log*
-Procfile
 .DS_Store
 /*.env
+# Local Netlify folder
+.netlify
